@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="24dp">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoProduit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Produit"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"/>
+
+        <!-- Client -->
+        <AutoCompleteTextView
+            android:id="@+id/autoClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Client"
+            android:inputType="text"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"/>
+
+        <!-- Sélection de la date -->
+        <Button
+            android:id="@+id/selectDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choisir une date"
+            android:layout_marginTop="16dp" />
+
+
+        <RadioGroup
+            android:id="@+id/statusGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/radioEnAttente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En attente"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioLivre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Livré"
+                android:layout_marginStart="16dp"/>
+        </RadioGroup>
+
+        <!-- Bouton Ajouter -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>
